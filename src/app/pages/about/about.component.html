@@ -1,0 +1,9 @@
+<h2>
+  Parent Counter: {{ parentCounter }}
+  <button (click)="incrementChildCounter()">Increment child</button>
+</h2>
+
+<app-child
+  [counterValue]="childCounter"
+  (changeParentCounter)="incrementParentCounter()"
+></app-child>
